@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090404">
+  <meta name="description" content="Smell Panties — Website under construction / Site en construction.">
+  <title>Smell Panties — Coming Soon</title>
+  <style>
+    :root{
+      --bg:#070303;
+      --panel:rgba(24,10,10,.72);
+      --rose:#efaa91;
+      --rose2:#ffd7c7;
+      --muted:#c9aaa0;
+      --line:rgba(239,170,145,.22);
+      --text:#fff7f3;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%}
+    body{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding:22px;
+      color:var(--text);
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:
+        radial-gradient(circle at 50% 16%,rgba(193,85,63,.18),transparent 30rem),
+        radial-gradient(circle at 15% 90%,rgba(112,42,34,.14),transparent 26rem),
+        linear-gradient(145deg,#040202,#130707 50%,#050202);
+      overflow-x:hidden;
+    }
+    body:before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+      background-size:42px 42px;
+      opacity:.35;
+      mask-image:radial-gradient(circle at center,#000,transparent 77%);
+    }
+    .card{
+      width:min(980px,100%);
+      position:relative;
+      overflow:hidden;
+      padding:clamp(28px,5vw,58px);
+      border:1px solid var(--line);
+      border-radius:30px;
+      background:
+        linear-gradient(160deg,rgba(255,255,255,.035),transparent 36%),
+        var(--panel);
+      box-shadow:0 34px 95px rgba(0,0,0,.58),inset 0 1px rgba(255,255,255,.04);
+      backdrop-filter:blur(20px);
+      text-align:center;
+    }
+    .logo{
+      width:min(360px,78vw);
+      display:block;
+      margin:0 auto 12px;
+      filter:drop-shadow(0 18px 34px rgba(0,0,0,.45)) drop-shadow(0 0 14px rgba(239,170,145,.13));
+      animation:float 5s ease-in-out infinite;
+    }
+    @keyframes float{50%{transform:translateY(-4px) scale(1.01)}}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      padding:8px 14px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(239,170,145,.055);
+      color:var(--rose2);
+      font-size:11px;
+      letter-spacing:.22em;
+      text-transform:uppercase;
+    }
+    .pill:before{
+      content:"";
+      width:6px;height:6px;border-radius:50%;
+      background:var(--rose);
+      box-shadow:0 0 12px var(--rose);
+    }
+    h1{
+      margin:22px 0 0;
+      font:400 clamp(35px,7vw,72px)/.98 Georgia,"Times New Roman",serif;
+      letter-spacing:-.035em;
+      background:linear-gradient(#fff8f4,#f3c1ae 57%,#a76253);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+    }
+    .divider{
+      width:min(220px,58%);
+      height:1px;
+      margin:25px auto;
+      background:linear-gradient(90deg,transparent,rgba(239,170,145,.86),transparent);
+      position:relative;
+    }
+    .divider:after{
+      content:"✦";
+      position:absolute;
+      left:50%;top:50%;
+      transform:translate(-50%,-50%);
+      background:#120707;
+      color:var(--rose);
+      padding:0 12px;
+      font-size:12px;
+    }
+    .langs{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      max-width:760px;
+      margin:auto;
+    }
+    .lang{
+      padding:20px;
+      border-radius:18px;
+      border:1px solid rgba(239,170,145,.12);
+      background:rgba(255,255,255,.018);
+    }
+    .lang strong{
+      display:block;
+      margin-bottom:8px;
+      color:var(--rose2);
+      font:400 21px Georgia,"Times New Roman",serif;
+    }
+    .lang p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.75;
+    }
+    .tagline{
+      margin-top:26px;
+      color:#eac0b2;
+      font-size:12px;
+      letter-spacing:.26em;
+      text-transform:uppercase;
+    }
+    footer{
+      margin-top:22px;
+      color:rgba(224,196,187,.45);
+      font-size:11px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    @media(max-width:680px){
+      body{padding:12px}
+      .card{border-radius:22px;padding:23px 17px 29px}
+      .langs{grid-template-columns:1fr;gap:10px}
+      .lang{padding:15px}
+      .tagline{letter-spacing:.16em}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *{animation:none!important}
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="logo.png" alt="Smell Panties">
+    <div class="pill">Coming Soon · Bientôt</div>
+    <h1>Under Construction</h1>
+    <div class="divider"></div>
+
+    <section class="langs">
+      <article class="lang">
+        <strong>English</strong>
+        <p>
+          Our website is currently under construction.
+          We're preparing something bold, elegant and unforgettable.
+          Please come back soon.
+        </p>
+      </article>
+
+      <article class="lang" lang="fr">
+        <strong>Français</strong>
+        <p>
+          Notre site est présentement en construction.
+          Nous préparons une expérience audacieuse, élégante et inoubliable.
+          Revenez bientôt.
+        </p>
+      </article>
+    </section>
+
+    <div class="tagline">More than a scent · Plus qu'un parfum</div>
+    <footer>© <span id="year"></span> Smell Panties</footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
